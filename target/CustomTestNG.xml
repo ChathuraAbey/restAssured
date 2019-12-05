@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="My Test Suite 001">
+    <test name="testngTest">
+        <classes>
+            <class name="AdminFunctions" />
+            <class name="testCdr" />
+        </classes>
+    </test>
+</suite>
