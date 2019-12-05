@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="841818c4-69c5-489e-94be-44cd697cc123" name="Default Changelist" comment="" />
+    <list default="true" id="841818c4-69c5-489e-94be-44cd697cc123" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +20,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -26,6 +31,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1URCX5rAuSfMcQNkQiIrFERe2iv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -33,6 +39,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/aux/ra" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/aux/bdd" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -51,7 +58,20 @@
       <recent name="com.aux.ra" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: AdminFeature">
+  <component name="RunManager" selected="Application.directsample">
+    <configuration name="directsample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aux.ra.directsample" />
+      <module name="Trainging RA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aux.ra.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: AdminFeature" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/java/com/aux/bdd/AdminFeature.feature" />
@@ -106,20 +126,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CucumberRunner" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Trainging RA" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CucumberRunner" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/home/aux-120/Desktop/Trainging RA/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Trainging RA" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+    <configuration name="/home/aux-120/Desktop/Trainging RA/target/CustomTestNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/target/CustomTestNG.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -129,18 +137,18 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber java.Feature: AdminFeature" />
-      <item itemvalue="TestNG./home/aux-120/Desktop/Trainging RA/testng.xml" />
-      <item itemvalue="TestNG.CucumberRunner" />
       <item itemvalue="JUnit.runeer" />
       <item itemvalue="JUnit.runner" />
+      <item itemvalue="TestNG./home/aux-120/Desktop/Trainging RA/target/CustomTestNG.xml" />
+      <item itemvalue="Application.directsample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.directsample" />
+        <item itemvalue="TestNG./home/aux-120/Desktop/Trainging RA/target/CustomTestNG.xml" />
         <item itemvalue="JUnit.runner" />
         <item itemvalue="JUnit.runeer" />
         <item itemvalue="Cucumber java.Feature: AdminFeature" />
-        <item itemvalue="Cucumber java.Feature: AdminFeature" />
-        <item itemvalue="TestNG.CucumberRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -216,29 +224,29 @@
       <screen x="0" y="26" width="1600" height="874" />
     </state>
     <state x="583" y="189" width="424" height="491" key="FileChooserDialogImpl/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575457764380" />
-    <state width="1876" height="399" key="GridCell.Tab.0.bottom" timestamp="1575535835851">
-      <screen x="1600" y="0" width="1920" height="1080" />
+    <state width="1556" height="327" key="GridCell.Tab.0.bottom" timestamp="1575539696838">
+      <screen x="0" y="26" width="1600" height="874" />
     </state>
     <state width="1556" height="270" key="GridCell.Tab.0.bottom/0.26.1600.874@0.26.1600.874" timestamp="1575316644315" />
-    <state width="1556" height="399" key="GridCell.Tab.0.bottom/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575535379663" />
+    <state width="1556" height="327" key="GridCell.Tab.0.bottom/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575539696838" />
     <state width="1876" height="399" key="GridCell.Tab.0.bottom/1600.0.1920.1080/0.26.1600.874@1600.0.1920.1080" timestamp="1575535835851" />
-    <state width="1876" height="399" key="GridCell.Tab.0.center" timestamp="1575535835851">
-      <screen x="1600" y="0" width="1920" height="1080" />
+    <state width="1556" height="327" key="GridCell.Tab.0.center" timestamp="1575539696838">
+      <screen x="0" y="26" width="1600" height="874" />
     </state>
     <state width="1556" height="270" key="GridCell.Tab.0.center/0.26.1600.874@0.26.1600.874" timestamp="1575316644315" />
-    <state width="1556" height="399" key="GridCell.Tab.0.center/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575535379663" />
+    <state width="1556" height="327" key="GridCell.Tab.0.center/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575539696838" />
     <state width="1876" height="399" key="GridCell.Tab.0.center/1600.0.1920.1080/0.26.1600.874@1600.0.1920.1080" timestamp="1575535835851" />
-    <state width="1876" height="399" key="GridCell.Tab.0.left" timestamp="1575535835851">
-      <screen x="1600" y="0" width="1920" height="1080" />
+    <state width="1556" height="327" key="GridCell.Tab.0.left" timestamp="1575539696838">
+      <screen x="0" y="26" width="1600" height="874" />
     </state>
     <state width="1556" height="270" key="GridCell.Tab.0.left/0.26.1600.874@0.26.1600.874" timestamp="1575316644315" />
-    <state width="1556" height="399" key="GridCell.Tab.0.left/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575535379663" />
+    <state width="1556" height="327" key="GridCell.Tab.0.left/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575539696838" />
     <state width="1876" height="399" key="GridCell.Tab.0.left/1600.0.1920.1080/0.26.1600.874@1600.0.1920.1080" timestamp="1575535835851" />
-    <state width="1876" height="399" key="GridCell.Tab.0.right" timestamp="1575535835851">
-      <screen x="1600" y="0" width="1920" height="1080" />
+    <state width="1556" height="327" key="GridCell.Tab.0.right" timestamp="1575539696838">
+      <screen x="0" y="26" width="1600" height="874" />
     </state>
     <state width="1556" height="270" key="GridCell.Tab.0.right/0.26.1600.874@0.26.1600.874" timestamp="1575316644315" />
-    <state width="1556" height="399" key="GridCell.Tab.0.right/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575535379663" />
+    <state width="1556" height="327" key="GridCell.Tab.0.right/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575539696838" />
     <state width="1876" height="399" key="GridCell.Tab.0.right/1600.0.1920.1080/0.26.1600.874@1600.0.1920.1080" timestamp="1575535835851" />
     <state width="1556" height="280" key="GridCell.Tab.1.bottom" timestamp="1575458780707">
       <screen x="0" y="26" width="1600" height="874" />
