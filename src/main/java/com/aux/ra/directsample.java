@@ -39,7 +39,7 @@ public class directsample{
 
         // Make a request to the server by specifying the method Type and the method URL.
         // This will return the Response from the server. Store the response in a variable.
-        Response response = httpRequest.request(Method.POST, "/auth/AdminFunction");
+        Response response = httpRequest.request(Method.POST, "/auth/login");
 
         // Now let us print the body of the message to see what response
         // we have recieved from the server
