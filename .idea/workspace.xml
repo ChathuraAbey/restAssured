@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="841818c4-69c5-489e-94be-44cd697cc123" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCdr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testCdr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testCdr.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="GitHub &lt;noreply@github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -58,38 +65,7 @@
       <recent name="com.aux.ra" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.directsample">
-    <configuration name="directsample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.aux.ra.directsample" />
-      <module name="Trainging RA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.aux.ra.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: AdminFeature" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/java/com/aux/bdd/AdminFeature.feature" />
-      <option name="GLUE" value="com.aux.stepdef" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="Trainging RA" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: AdminFeature" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.testCdr.Array">
     <configuration name="Feature: AdminFeature" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/AdminFeature.feature" />
@@ -108,27 +84,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="runeer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testCdr" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Trainging RA" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="runeer" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="testCdr" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testCdr.Array" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Trainging RA" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="runner" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="testCdr" />
+      <option name="METHOD_NAME" value="Array" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/home/aux-120/Desktop/Trainging RA/target/CustomTestNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/target/CustomTestNG.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+    <configuration name="testCdr.Fib" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Trainging RA" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testCdr" />
+      <option name="METHOD_NAME" value="Fib" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testCdr.foreLoop" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Trainging RA" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testCdr" />
+      <option name="METHOD_NAME" value="foreLoop" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testCdr.whileLooop" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Trainging RA" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testCdr" />
+      <option name="METHOD_NAME" value="whileLooop" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -136,19 +144,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber java.Feature: AdminFeature" />
-      <item itemvalue="JUnit.runeer" />
-      <item itemvalue="JUnit.runner" />
-      <item itemvalue="TestNG./home/aux-120/Desktop/Trainging RA/target/CustomTestNG.xml" />
-      <item itemvalue="Application.directsample" />
+      <item itemvalue="TestNG.testCdr.foreLoop" />
+      <item itemvalue="TestNG.testCdr.whileLooop" />
+      <item itemvalue="TestNG.testCdr.Fib" />
+      <item itemvalue="TestNG.testCdr" />
+      <item itemvalue="TestNG.testCdr.Array" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.directsample" />
-        <item itemvalue="TestNG./home/aux-120/Desktop/Trainging RA/target/CustomTestNG.xml" />
-        <item itemvalue="JUnit.runner" />
-        <item itemvalue="JUnit.runeer" />
-        <item itemvalue="Cucumber java.Feature: AdminFeature" />
+        <item itemvalue="TestNG.testCdr.Array" />
+        <item itemvalue="TestNG.testCdr" />
+        <item itemvalue="TestNG.testCdr.Fib" />
+        <item itemvalue="TestNG.testCdr.whileLooop" />
+        <item itemvalue="TestNG.testCdr.foreLoop" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +183,32 @@
       <option name="presentableId" value="Default" />
       <updated>1575310056505</updated>
     </task>
+    <task id="LOCAL-00001" summary="Chathura">
+      <created>1575544145769</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575544145769</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Chathura" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chathura" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="111" width="800" height="684" key="#Auto_Import" timestamp="1575368988276">
@@ -208,6 +241,10 @@
     </state>
     <state x="532" y="237" width="525" height="433" key="#com.intellij.ide.util.TreeClassChooserDialog/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575454458566" />
     <state x="2238" y="261" key="#com.intellij.ide.util.TreeClassChooserDialog/1600.0.1920.1080/0.26.1600.874@1600.0.1920.1080" timestamp="1575531588577" />
+    <state x="483" y="194" width="624" height="545" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575822793323">
+      <screen x="0" y="26" width="1600" height="874" />
+    </state>
+    <state x="483" y="194" width="624" height="545" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.26.1600.874@0.26.1600.874" timestamp="1575822793323" />
     <state x="417" y="378" width="765" height="150" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1575449795284">
       <screen x="0" y="26" width="1600" height="874" />
     </state>
@@ -220,33 +257,37 @@
       <screen x="0" y="26" width="1600" height="874" />
     </state>
     <state x="569" y="333" width="462" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575449797880" />
+    <state x="400" y="87" width="742" height="813" key="CommitChangelistDialog2" timestamp="1575544145650">
+      <screen x="0" y="26" width="1600" height="874" />
+    </state>
+    <state x="400" y="87" width="742" height="813" key="CommitChangelistDialog2/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575544145650" />
     <state x="583" y="189" width="424" height="491" key="FileChooserDialogImpl" timestamp="1575457764381">
       <screen x="0" y="26" width="1600" height="874" />
     </state>
     <state x="583" y="189" width="424" height="491" key="FileChooserDialogImpl/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575457764380" />
-    <state width="1556" height="327" key="GridCell.Tab.0.bottom" timestamp="1575539696838">
+    <state width="1556" height="315" key="GridCell.Tab.0.bottom" timestamp="1575826649156">
       <screen x="0" y="26" width="1600" height="874" />
     </state>
-    <state width="1556" height="270" key="GridCell.Tab.0.bottom/0.26.1600.874@0.26.1600.874" timestamp="1575316644315" />
-    <state width="1556" height="327" key="GridCell.Tab.0.bottom/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575539696838" />
+    <state width="1556" height="315" key="GridCell.Tab.0.bottom/0.26.1600.874@0.26.1600.874" timestamp="1575826649156" />
+    <state width="1556" height="327" key="GridCell.Tab.0.bottom/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575544148808" />
     <state width="1876" height="399" key="GridCell.Tab.0.bottom/1600.0.1920.1080/0.26.1600.874@1600.0.1920.1080" timestamp="1575535835851" />
-    <state width="1556" height="327" key="GridCell.Tab.0.center" timestamp="1575539696838">
+    <state width="1556" height="315" key="GridCell.Tab.0.center" timestamp="1575826649155">
       <screen x="0" y="26" width="1600" height="874" />
     </state>
-    <state width="1556" height="270" key="GridCell.Tab.0.center/0.26.1600.874@0.26.1600.874" timestamp="1575316644315" />
-    <state width="1556" height="327" key="GridCell.Tab.0.center/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575539696838" />
+    <state width="1556" height="315" key="GridCell.Tab.0.center/0.26.1600.874@0.26.1600.874" timestamp="1575826649155" />
+    <state width="1556" height="327" key="GridCell.Tab.0.center/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575544148808" />
     <state width="1876" height="399" key="GridCell.Tab.0.center/1600.0.1920.1080/0.26.1600.874@1600.0.1920.1080" timestamp="1575535835851" />
-    <state width="1556" height="327" key="GridCell.Tab.0.left" timestamp="1575539696838">
+    <state width="1556" height="315" key="GridCell.Tab.0.left" timestamp="1575826649155">
       <screen x="0" y="26" width="1600" height="874" />
     </state>
-    <state width="1556" height="270" key="GridCell.Tab.0.left/0.26.1600.874@0.26.1600.874" timestamp="1575316644315" />
-    <state width="1556" height="327" key="GridCell.Tab.0.left/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575539696838" />
+    <state width="1556" height="315" key="GridCell.Tab.0.left/0.26.1600.874@0.26.1600.874" timestamp="1575826649155" />
+    <state width="1556" height="327" key="GridCell.Tab.0.left/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575544148808" />
     <state width="1876" height="399" key="GridCell.Tab.0.left/1600.0.1920.1080/0.26.1600.874@1600.0.1920.1080" timestamp="1575535835851" />
-    <state width="1556" height="327" key="GridCell.Tab.0.right" timestamp="1575539696838">
+    <state width="1556" height="315" key="GridCell.Tab.0.right" timestamp="1575826649155">
       <screen x="0" y="26" width="1600" height="874" />
     </state>
-    <state width="1556" height="270" key="GridCell.Tab.0.right/0.26.1600.874@0.26.1600.874" timestamp="1575316644315" />
-    <state width="1556" height="327" key="GridCell.Tab.0.right/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575539696838" />
+    <state width="1556" height="315" key="GridCell.Tab.0.right/0.26.1600.874@0.26.1600.874" timestamp="1575826649155" />
+    <state width="1556" height="327" key="GridCell.Tab.0.right/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575544148808" />
     <state width="1876" height="399" key="GridCell.Tab.0.right/1600.0.1920.1080/0.26.1600.874@1600.0.1920.1080" timestamp="1575535835851" />
     <state width="1556" height="280" key="GridCell.Tab.1.bottom" timestamp="1575458780707">
       <screen x="0" y="26" width="1600" height="874" />
@@ -287,11 +328,16 @@
       <screen x="0" y="26" width="1600" height="874" />
     </state>
     <state x="583" y="234" width="423" height="445" key="chooseDestDirectoryDialog/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575451706666" />
-    <state x="525" y="334" key="com.intellij.ide.util.TipDialog" timestamp="1575525522344">
+    <state x="525" y="334" key="com.intellij.ide.util.TipDialog" timestamp="1575822811424">
       <screen x="0" y="26" width="1600" height="874" />
     </state>
-    <state x="525" y="334" key="com.intellij.ide.util.TipDialog/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575525522344" />
+    <state x="525" y="334" key="com.intellij.ide.util.TipDialog/0.26.1600.874@0.26.1600.874" timestamp="1575822811424" />
+    <state x="525" y="334" key="com.intellij.ide.util.TipDialog/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575616305002" />
     <state x="2230" y="380" key="com.intellij.ide.util.TipDialog/1600.0.1920.1080/0.26.1600.874@1600.0.1920.1080" timestamp="1575438279395" />
+    <state x="583" y="370" width="434" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575544092123">
+      <screen x="0" y="26" width="1600" height="874" />
+    </state>
+    <state x="583" y="370" width="434" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1600.0.1920.1080/0.26.1600.874@0.26.1600.874" timestamp="1575544092123" />
     <state x="148" y="148" width="1294" height="610" key="new project wizard" timestamp="1575526692302">
       <screen x="0" y="26" width="1600" height="874" />
     </state>
