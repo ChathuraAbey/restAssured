@@ -7,15 +7,12 @@ import io.restassured.specification.RequestSpecification;
 public class directsample{
 
     static  String   AC;
-
-
     public static void main(String[] args) {
        // System.out.println("Hello World!");
         login();
         getAgents();
         //getAC();
     }
-
     public static void login()
     {
         // Specify the base URL to the RESTful web service

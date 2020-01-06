@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="/home/aux-120/Desktop/Trainging RA/src/test/java">
-        <classes/>
+<suite name="My Test Suite 001">
+    <test name="testngTest">
+        <classes>
+            <class name="AdminFunctions" />
+            <class name="AdminFunctions" />
+        </classes>
     </test>
 </suite>
