@@ -56,7 +56,7 @@ public class testCdr {
 
             System.out.println(Numbers[i]);
 
-            int flip[i] = Numbers[i];
+            //int flip[i] = Numbers[i];
         }
         }
 

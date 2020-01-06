@@ -33,9 +33,6 @@ public class directsample{
 //                )
                 .multiPart("username","dantooine_agent1@mailinator.com")
                 .multiPart("password","Ziwo@123");
-                 //.formParam("username","dantooine_agent1@mailinator.com")
-                //.formParam("password","Ziwo@123");
-
 
         // Make a request to the server by specifying the method Type and the method URL.
         // This will return the Response from the server. Store the response in a variable.
