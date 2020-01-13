@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="TraingingRA" />
+        <module name="Trainging RA (copy)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="9" />

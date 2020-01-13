@@ -1,8 +1,9 @@
+import com.ra.AdminFunction;
 import org.testng.annotations.Test;
 
 public class AdminFunctions {
 
-    com.aux.ra.AdminFunction adminFunction=new com.aux.ra.AdminFunction();
+    AdminFunction adminFunction=new AdminFunction();
 
     @Test(priority=1)
     public void AdminLogin()
