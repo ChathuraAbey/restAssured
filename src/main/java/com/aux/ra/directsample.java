@@ -30,7 +30,6 @@ public class directsample{
 //                )
                 .multiPart("username","dantooine_agent1@mailinator.com")
                 .multiPart("password","Ziwo@123");
-
         // Make a request to the server by specifying the method Type and the method URL.
         // This will return the Response from the server. Store the response in a variable.
         Response response = httpRequest.request(Method.POST, "/auth/login");
