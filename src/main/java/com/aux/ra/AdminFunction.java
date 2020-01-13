@@ -1,16 +1,17 @@
 package com.aux.ra;
 
+
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import static org.hamcrest.Matchers.*;
+import utill.Utility;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 
-public class AdminFunction {
-
+public class AdminFunction extends Utility {
 
 
 
@@ -38,11 +39,8 @@ public class AdminFunction {
                 .header("access_token","95f000a0-1537-11ea-8319-7bc1b2a4c13d");
         Response response = httpRequest.request(Method.GET, "/admin/agents");
         String responseBody = response.getBody().asString();
-        //System.out.println("Response Body is =>  " + responseBody);
-
 
     }
-
 
     public void test_ResponseHeaderLength_ShouldBeCorrect() {
 

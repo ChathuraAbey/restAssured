@@ -1,22 +1,29 @@
 package com.aux.ra;
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import utill.Utility;
 
-public class directsample{
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+
+public class directsample extends Utility {
 
     static  String   AC;
+
     public static void main(String[] args) {
-       // System.out.println("Hello World!");
+        // System.out.println("Hello World!");
         login();
         getAgents();
-        //getAC();
+        Parameterize();
     }
+
     public static void login()
     {
         // Specify the base URL to the RESTful web service
-        RestAssured.baseURI = "https://dantooine-api.aswat.co";
+        RestAssured.baseURI = baseUrl();
         // Get the RequestSpecification of the request that you want to sent
         // to the server. The server is specified by the BaseURI that we have
         // specified in the above step.
@@ -28,8 +35,8 @@ public class directsample{
 //                        + "\"password\": Ziwo@123,"
 //                        + "}"
 //                )
-                .multiPart("username","dantooine_agent1@mailinator.com")
-                .multiPart("password","Ziwo@123");
+                .multiPart("username",UserName())
+                .multiPart("password",Password());
         // Make a request to the server by specifying the method Type and the method URL.
         // This will return the Response from the server. Store the response in a variable.
         Response response = httpRequest.request(Method.POST, "/auth/login");
@@ -37,45 +44,54 @@ public class directsample{
         // Now let us print the body of the message to see what response
         // we have recieved from the server
         int code = response.getStatusCode();
-        AC =  response.jsonPath().getString("access_token");
         String responseBody = response.getBody().asString();
+
        // System.out.println("Access Token  is =>  " + AC.toString());
         System.out.println("Response Body is =>  " + responseBody);
         System.out.println(" Status Code is => " + code);
+        //System.out.println("Access Token extracted ----->"+AC);
 
     }
 
     public static void getAgents()
     {
-      RestAssured.baseURI = "https://dantooine-api.aswat.co";
+      RestAssured.baseURI = baseUrl();
         RequestSpecification httpRequest = RestAssured.given()
-                .header("access_token","95f000a0-1537-11ea-8319-7bc1b2a4c13d");
+                .header("access_token",accessToken());
         Response response = httpRequest.request(Method.GET, "/admin/agents");
         String responseBody = response.getBody().asString();
         System.out.println("Response Body is =>  " + responseBody);
 
 
     }
+    public static void Parameterize() {
 
-
-    public static void getAC()
-    {
-        RestAssured.baseURI = "https://dantooine-api.aswat.co";
-
-        RequestSpecification httpRequest = RestAssured.given()
+        RestAssured.baseURI = baseUrl();
+        String  token =   given()
+                //.contentType(ContentType.JSON)
                 .header("ContentType","JSON")
-                .multiPart("username","dantooine_agent1@mailinator.com")
-                .multiPart("password","Ziwo@123");
-        Response response = httpRequest.request(Method.POST, "/auth/AdminFunction");
-//        int code = response.getStatusCode();
-//        String jsonpathCreatorNamePath = "$['content']['access_token']";
-//        JSONObject JO=new JSONObject(response);
-//        DocumentContext jsonContext = JsonPath.parse(JO);
-//        String jsonpathCreatorName = jsonContext.read(jsonpathCreatorNamePath);
-//        System.out.println(jsonpathCreatorName);
-//        //List<String> jsonpathCreatorLocation = jsonContext.read(jsonpathCreatorNamePath);
+                .multiPart("username",UserName())
+                .multiPart("password",Password())
+                .post("/auth/login")
+                .then().assertThat().statusCode(200)
+                .extract().response().path("content.access_token").toString();
+        System.out.println(token);
+        //Feeded Request
+        //RestAssured.baseURI = "https://dantooine-api.aswat.co";
+        given().header("access_token",token).
+                when().
+                get("/admin/agents").
+                then().
+                assertThat().
+                statusCode(200).
+                and().
+                contentType(ContentType.JSON).
+                and().
+                header("Server",equalTo("nginx"));
 
     }
-    }
+
+
+   }
 
 
