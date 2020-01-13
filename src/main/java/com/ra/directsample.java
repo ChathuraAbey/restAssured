@@ -7,16 +7,11 @@ import io.restassured.specification.RequestSpecification;
 public class directsample{
 
     static  String   AC;
-    public static void main(String[] args) {
-       // System.out.println("Hello World!");
-        login();
-        getAgents();
-        //getAC();
-    }
+
     public static void login()
     {
         // Specify the base URL to the RESTful web service
-        RestAssured.baseURI = "https://dantooine-api.aswat.co";
+        RestAssured.baseURI = "";
         // Get the RequestSpecification of the request that you want to sent
         // to the server. The server is specified by the BaseURI that we have
         // specified in the above step.
