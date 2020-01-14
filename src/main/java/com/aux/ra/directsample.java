@@ -11,13 +11,14 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class directsample extends Utility {
 
-    static  String   AC;
+    static String token;
 
     public static void main(String[] args) {
         // System.out.println("Hello World!");
         login();
-        getAgents();
         Parameterize();
+        getAgents();
+
     }
 
     public static void login()
@@ -57,7 +58,7 @@ public class directsample extends Utility {
     {
       RestAssured.baseURI = baseUrl();
         RequestSpecification httpRequest = RestAssured.given()
-                .header("access_token",accessToken());
+                .header("access_token",token);
         Response response = httpRequest.request(Method.GET, "/admin/agents");
         String responseBody = response.getBody().asString();
         System.out.println("Response Body is =>  " + responseBody);
@@ -67,7 +68,7 @@ public class directsample extends Utility {
     public static void Parameterize() {
 
         RestAssured.baseURI = baseUrl();
-        String  token =   given()
+        token =   given()
                 //.contentType(ContentType.JSON)
                 .header("ContentType","JSON")
                 .multiPart("username",UserName())

@@ -10,19 +10,19 @@ public class AdminFunctions {
         adminFunction.AdminLogin();
     }
 
-    @Test(priority=2)
+    @Test(priority=3)
     public void AdminGetAget()
     {   System.out.println(" ************  Running Get All Agents in the system API Admin");
         adminFunction.adminGetAgents();
     }
 
-    @Test(priority=3)
+    @Test(priority=4)
     public void ValidationContentTypeStatusCodeServer()
     {   System.out.println("************  Validating the get Agent API / Status /content type / server ... ");
         adminFunction.test_ResponseHeaderLength_ShouldBeCorrect();
     }
 
-    @Test(priority=4)
+    @Test(priority=2)
     public void Transmit()
     {   System.out.println("************  Transmitting Access Token in to next API ");
         adminFunction.Parameterize();

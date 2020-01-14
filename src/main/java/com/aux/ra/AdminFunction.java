@@ -13,7 +13,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class AdminFunction extends Utility {
 
-
+    static String token;
 
     public static void AdminLogin()
     {
@@ -36,7 +36,7 @@ public class AdminFunction extends Utility {
     {
         RestAssured.baseURI = baseUrl();
         RequestSpecification httpRequest = given()
-                .header("access_token",accessToken());
+                .header("access_token",token);
         Response response = httpRequest.request(Method.GET, "/admin/agents");
         String responseBody = response.getBody().asString();
 
@@ -45,7 +45,7 @@ public class AdminFunction extends Utility {
     public void test_ResponseHeaderLength_ShouldBeCorrect() {
 
         RestAssured.baseURI = baseUrl();
-        given().header("access_token",accessToken()).
+        given().header("access_token",token).
                 when().
                 get("/admin/agents").
                 then().
@@ -60,7 +60,7 @@ public class AdminFunction extends Utility {
    public void Parameterize() {
 
        RestAssured.baseURI = baseUrl();
-             String  token =   given()
+               token =   given()
                //.contentType(ContentType.JSON)
                .header("ContentType","JSON")
                .multiPart("username",UserName())
