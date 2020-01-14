@@ -7,11 +7,6 @@ public class Utility {
         return BaseURL;
     }
 
-    // Example Utility method overloaded
-    public static String accessToken() {
-        String accessToken="0fbc9220-35c4-11ea-91c6-d725898c21a6";
-        return accessToken;
-    }
 
     // Example Utility method overloaded
     public static String UserName() {
