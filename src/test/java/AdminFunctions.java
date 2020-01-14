@@ -7,7 +7,8 @@ public class AdminFunctions {
     @Test(priority=1)
     public void AdminLogin()
     {   System.out.println(" ************ Running Logging API Admin");
-        adminFunction.AdminLogin();
+       String ValuesFromPOM = System.getProperty("instance");
+        adminFunction.AdminLogin(ValuesFromPOM);
     }
 
     @Test(priority=3)
@@ -28,10 +29,4 @@ public class AdminFunctions {
         adminFunction.Parameterize();
     }
 
-
-//    @AfterClass
-//    public void report(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputFileDirectory)
-//    {
-//
-//    }
 }

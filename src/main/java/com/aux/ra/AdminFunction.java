@@ -15,7 +15,7 @@ public class AdminFunction extends Utility {
 
     static String token;
 
-    public static void AdminLogin()
+    public static void AdminLogin(String Instance)
     {
 
         RestAssured.baseURI =baseUrl();
@@ -28,7 +28,7 @@ public class AdminFunction extends Utility {
         int code = response.getStatusCode();
         //String responseBody = response.getBody().asString();
         //System.out.println("Response Body is =>  " + responseBody);
-        //System.out.println(" Status Code is => " + code);
+        System.out.println(" Your Instance is ---- > " + Instance);
 
     }
 
