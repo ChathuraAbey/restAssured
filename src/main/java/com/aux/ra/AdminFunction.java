@@ -18,12 +18,12 @@ public class AdminFunction extends Utility {
     public static void AdminLogin()
     {
 
-        RestAssured.baseURI = "https://dantooine-api.aswat.co";
+        RestAssured.baseURI =baseUrl();
         RequestSpecification httpRequest = given()
                 //.contentType(ContentType.JSON)
                 .header("ContentType","JSON")
-                .multiPart("username","dantooine_agent1@mailinator.com")
-                .multiPart("password","Ziwo@123");
+                .multiPart("username",UserName())
+                .multiPart("password",Password());
         Response response = httpRequest.request(Method.POST, "/auth/login");
         int code = response.getStatusCode();
         //String responseBody = response.getBody().asString();
@@ -34,9 +34,9 @@ public class AdminFunction extends Utility {
 
     public static void adminGetAgents()
     {
-        RestAssured.baseURI = "https://dantooine-api.aswat.co";
+        RestAssured.baseURI = baseUrl();
         RequestSpecification httpRequest = given()
-                .header("access_token","95f000a0-1537-11ea-8319-7bc1b2a4c13d");
+                .header("access_token",accessToken());
         Response response = httpRequest.request(Method.GET, "/admin/agents");
         String responseBody = response.getBody().asString();
 
@@ -44,8 +44,8 @@ public class AdminFunction extends Utility {
 
     public void test_ResponseHeaderLength_ShouldBeCorrect() {
 
-        RestAssured.baseURI = "https://dantooine-api.aswat.co";
-        given().header("access_token","266ed040-3043-11ea-9a9e-2b52ad5fbe59").
+        RestAssured.baseURI = baseUrl();
+        given().header("access_token",accessToken()).
                 when().
                 get("/admin/agents").
                 then().
@@ -59,18 +59,18 @@ public class AdminFunction extends Utility {
 
    public void Parameterize() {
 
-       RestAssured.baseURI = "https://dantooine-api.aswat.co";
+       RestAssured.baseURI = baseUrl();
              String  token =   given()
                //.contentType(ContentType.JSON)
                .header("ContentType","JSON")
-               .multiPart("username","chathura.abeywickrama@aswat-telecom.com")
-               .multiPart("password","Ziwo@123")
+               .multiPart("username",UserName())
+               .multiPart("password",Password())
                .post("/auth/login")
                .then().assertThat().statusCode(200)
                         .extract().response().path("content.access_token").toString();
                // System.out.println(token);
                 //Feeded Request
-       RestAssured.baseURI = "https://dantooine-api.aswat.co";
+       RestAssured.baseURI = baseUrl();
        given().header("access_token",token).
                when().
                get("/admin/agents").
